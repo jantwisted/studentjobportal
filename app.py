@@ -9,6 +9,7 @@ import jwt
 
 app = Flask(__name__)
 app.config['GOOGLEMAPS_KEY'] = "AIzaSyCN5UwzussKx2SSNjo-qJla0f3aGr-KnmQ"
+app.secret_key = os.urandom(12)
 GoogleMaps(app)
 
 api_url = 'https://studentjobengine.herokuapp.com'
@@ -92,5 +93,4 @@ def logout():
 
 
 if __name__ == "__main__":
-    app.secret_key = os.urandom(12)
     app.run()
