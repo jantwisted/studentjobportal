@@ -12,7 +12,7 @@ app.config['GOOGLEMAPS_KEY'] = "AIzaSyCN5UwzussKx2SSNjo-qJla0f3aGr-KnmQ"
 app.secret_key = os.urandom(12)
 GoogleMaps(app)
 
-api_url = os.environ['API']
+api_url = "https://studentjobengine.herokuapp.com"
 
 jwt_token = ''
 
