@@ -4,15 +4,15 @@ A web interface for StudentJobEngine API
 ## How to install
 
 - clone
-	git clone https://github.com/jantwisted/studentjobportal.git
+	- git clone https://github.com/jantwisted/studentjobportal.git
 
 - spin up
-	cd studentjobportal
-	helm install --name <namespace> ./portalchart/ --set service.type=NodePort
+	- cd studentjobportal
+	- helm install --name <namespace> ./portalchart/ --set service.type=NodePort
 	
 - gke note
-	gcloud compute firewall-rules create test-node-port --allow tcp:$NODE_PORT #allow node port from the firewall
-	kubectl get nodes --output wide #get the external ip address
+	- gcloud compute firewall-rules create test-node-port --allow tcp:$NODE_PORT #allow node port from the firewall
+	- kubectl get nodes --output wide #get the external ip address
 
 
 ## Test
