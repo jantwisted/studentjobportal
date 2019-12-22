@@ -62,7 +62,7 @@ def home(latitude='', longitude=''):
         return render_template('home.html', sndmap=sndmap)
 
 
-@app.route('/login', methods=['POST'])
+@app.route('/', methods=['POST'])
 def do_admin_login():
     user_details = {}
     print(request.form)
@@ -136,4 +136,4 @@ def logout():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=1588)
